@@ -1,0 +1,24 @@
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel ComputeTemplate
+
+// --- Structs ---
+struct TestStruct
+{
+    float testValue; 
+};
+
+// --- Buffers ---
+RWStructuredBuffer<TestStruct> testBuffer;
+RWTexture2D<float4> testTexture;
+
+// --- Variables ---    
+
+
+[numthreads(8,8,1)]
+void ComputeTemplate(uint3 id : SV_DispatchThreadID)
+{
+    // Stuff to use. (These are threads). Use these as indices for buffers. 
+    uint x = id.x; 
+    uint y = id.y; 
+    uint z = id.z; 
+}
