@@ -151,11 +151,11 @@ PrefabInstance:
       objectReference: {fileID: 8633578136013137227}
     - target: {fileID: 4026167085268298930, guid: 3edcf70af3303894482eb673a57b1198, type: 3}
       propertyPath: m_Name
-      value: SK_Goat_dark Variant
+      value: ChaserGoat
       objectReference: {fileID: 0}
     - target: {fileID: 4026167085268298930, guid: 3edcf70af3303894482eb673a57b1198, type: 3}
       propertyPath: m_TagString
-      value: Obstacle
+      value: Sheep
       objectReference: {fileID: 0}
     - target: {fileID: 4026167085268298943, guid: 3edcf70af3303894482eb673a57b1198, type: 3}
       propertyPath: m_LocalPosition.x

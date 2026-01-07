@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &3054358219376489097
+--- !u!1001 &3698926396804066827
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -11,26 +11,38 @@ PrefabInstance:
     - target: {fileID: 6517686061769116558, guid: f32fc89859f16ec49bc857008a5ed9c5, type: 3}
       propertyPath: animator
       value: 
-      objectReference: {fileID: 8075018379485362456}
+      objectReference: {fileID: 7576814913609344410}
     - target: {fileID: 6517686061769116559, guid: f32fc89859f16ec49bc857008a5ed9c5, type: 3}
       propertyPath: m_Name
-      value: Sheep
+      value: ComfortSheep
       objectReference: {fileID: 0}
     - target: {fileID: 6517686061769116559, guid: f32fc89859f16ec49bc857008a5ed9c5, type: 3}
       propertyPath: m_TagString
       value: Sheep
       objectReference: {fileID: 0}
     - target: {fileID: 6517686061769116560, guid: f32fc89859f16ec49bc857008a5ed9c5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6517686061769116560, guid: f32fc89859f16ec49bc857008a5ed9c5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6517686061769116560, guid: f32fc89859f16ec49bc857008a5ed9c5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6517686061769116560, guid: f32fc89859f16ec49bc857008a5ed9c5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -36.30551
+      value: 17.28716
       objectReference: {fileID: 0}
     - target: {fileID: 6517686061769116560, guid: f32fc89859f16ec49bc857008a5ed9c5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.21001
+      value: 0.00001
       objectReference: {fileID: 0}
     - target: {fileID: 6517686061769116560, guid: f32fc89859f16ec49bc857008a5ed9c5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 32.4866
+      value: -10.02621
       objectReference: {fileID: 0}
     - target: {fileID: 6517686061769116560, guid: f32fc89859f16ec49bc857008a5ed9c5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -66,44 +78,58 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6517686061769116559, guid: f32fc89859f16ec49bc857008a5ed9c5, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1660726790924069088}
+      addedObject: {fileID: 12809012851789275}
+    - targetCorrespondingSourceObject: {fileID: 6517686061769116559, guid: f32fc89859f16ec49bc857008a5ed9c5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7573295448413798889}
   m_SourcePrefab: {fileID: 100100000, guid: f32fc89859f16ec49bc857008a5ed9c5, type: 3}
---- !u!1 &8075018379485362438 stripped
+--- !u!1 &7576814913609344388 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6517686061769116559, guid: f32fc89859f16ec49bc857008a5ed9c5, type: 3}
-  m_PrefabInstance: {fileID: 3054358219376489097}
+  m_PrefabInstance: {fileID: 3698926396804066827}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1660726790924069088
+--- !u!114 &12809012851789275
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8075018379485362438}
+  m_GameObject: {fileID: 7576814913609344388}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8698d0de6cc3c52439ad58479c0bb745, type: 3}
+  m_Script: {fileID: 11500000, guid: b10a11bb0c2f87a48a197dc8df4813be, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AgentMovement
-  chaser: {fileID: 0}
-  fleeDistance: 5
-  movementSpeed: 0.05
-  rotationSpeed: 1
-  linearDamping: 0.1
+  m_EditorClassIdentifier: Assembly-CSharp::ComfortSteering
+  l: 0.36
+  T: 0.86
+  freeSpeedMean: 2
+  freeSpeedStdev: 0.249
+  direction: {x: 0, y: 0, z: 0}
   target: {fileID: 0}
-  T: 3
-  slowing_distance: 20
-  R: 5
-  player_radius: 0.5
-  maxObstacleDist: 4
-  obstacleR: 0.1
-  obstacleAvoidanceStrength: 0.1
-  wanderEnable: 1
-  wanderRadius: 0.1
-  wanderRandomness: 1
-  wanderStrength: 0.1
---- !u!95 &8075018379485362456 stripped
+  chosen: 0
+--- !u!135 &7573295448413798889
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7576814913609344388}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.36
+  m_Center: {x: 0, y: 0.7, z: 0}
+--- !u!95 &7576814913609344410 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 6517686061769116561, guid: f32fc89859f16ec49bc857008a5ed9c5, type: 3}
-  m_PrefabInstance: {fileID: 3054358219376489097}
+  m_PrefabInstance: {fileID: 3698926396804066827}
   m_PrefabAsset: {fileID: 0}

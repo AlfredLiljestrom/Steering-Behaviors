@@ -11,11 +11,11 @@ public class SimpleVehicleModel
 
     public SimpleVehicleModel(Vector3 origin) 
     {   
-        mass = 5.0f;
+        mass = 1.0f;
         position = origin;
         velocity = Vector3.zero;
-        max_force = 5f;
-        max_speed = 5f;
+        max_force = 20f;
+        max_speed = 2.0f;
         orientation = new Vector3[] { Vector3.forward, Vector3.up, Vector3.right };
     }
 }
