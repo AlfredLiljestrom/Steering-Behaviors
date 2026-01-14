@@ -1,6 +1,11 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
+
+/**
+ * Tried to implement OrcaSteering as well. Didn't work well in the end. 
+ * I know this isn't even close at the moment, but oh well. 
+ * 
+ */
 
 public class OrcaSteering : MonoBehaviour
 {

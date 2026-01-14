@@ -63,45 +63,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6517686061769116559, guid: f32fc89859f16ec49bc857008a5ed9c5, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1660726790924069088}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f32fc89859f16ec49bc857008a5ed9c5, type: 3}
---- !u!1 &8075018379485362438 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6517686061769116559, guid: f32fc89859f16ec49bc857008a5ed9c5, type: 3}
-  m_PrefabInstance: {fileID: 3054358219376489097}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1660726790924069088
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8075018379485362438}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8698d0de6cc3c52439ad58479c0bb745, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AgentMovement
-  chaser: {fileID: 0}
-  fleeDistance: 5
-  movementSpeed: 0.05
-  rotationSpeed: 1
-  linearDamping: 0.1
-  target: {fileID: 0}
-  T: 3
-  slowing_distance: 20
-  R: 5
-  player_radius: 0.5
-  maxObstacleDist: 4
-  obstacleR: 0.1
-  obstacleAvoidanceStrength: 0.1
-  wanderEnable: 1
-  wanderRadius: 0.1
-  wanderRandomness: 1
-  wanderStrength: 0.1
 --- !u!95 &8075018379485362456 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 6517686061769116561, guid: f32fc89859f16ec49bc857008a5ed9c5, type: 3}
