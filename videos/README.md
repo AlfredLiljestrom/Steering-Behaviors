@@ -1,0 +1,1 @@
+### Video is in 2x speed. To the left is the comfort steering model and to the right the Reynolds steering model. 
